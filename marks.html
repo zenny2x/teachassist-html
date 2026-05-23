@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+        body {
+            font-family: "Plus Jakarta Sans";
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(270deg,
+                    #f3e7e9, #e3eeff, #c9f0e0, #f3e7e9);
+            background-size: 400% 400%;
+            animation: swoosh 6s ease infinite;
+        }
+
+        @keyframes swoosh {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.14);
+            display: flex;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(13.4px);
+            -webkit-backdrop-filter: blur(13.4px);
+            border: 1px solid rgba(255, 255, 255, 0.43);
+        }
+
+        .course {
+            position: relative;
+            height: 150px;
+            width: 340px;
+            margin-top: 10px;
+        }
+
+        .lunch {
+            height: 50px;
+            justify-content: center;
+            border: 3px dotted rgba(255, 255, 255, 0.43);
+            align-items: center;
+            color: white;
+            font-weight: 900;
+        }
+
+        .general-info {
+            margin-left: 105px;
+            height: 90px;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2.1px);
+            -webkit-backdrop-filter: blur(2.1px);
+            background: rgba(255, 255, 255, 0);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2.1px);
+            -webkit-backdrop-filter: blur(2.1px);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const data = ["349300863", { "course_code": "HZT4U1-3", "course_name": "PHILOSOPHY: QUESTIONS AND THEORIES", "period": "1", "room": "211 ", "semester": 2, "midterm_mark": 89, "final_mark": null, "current_mark": null, "course_link": { "type": 1 } }, { "course_code": "LUNCH-4", "course_name": "lunch", "period": "2", "room": "CAFE", "semester": 2, "lunch": true }, { "course_code": "SCH4U1-3", "course_name": "Chemistry", "period": "3", "room": "132 ", "semester": 2, "midterm_mark": 77, "final_mark": null, "current_mark": 62.4, "course_link": { "link": "viewReport.php?subject_id=700671&student_id=201835", "type": 1 }, "course_specifics": { "assignments": [{ "assignment_name": "Unit 1 Test 1 (Structure and Properties)", "KTCAOF": { "K": { "mark": "79", "weight": "14" }, "T": { "mark": "86", "weight": "14" }, "C": { "mark": "85", "weight": "13" }, "A": { "mark": 0, "weight": 0 } } }, { "assignment_name": "Properties of Matter Presentation", "KTCAOF": { "K": { "mark": "95", "weight": "10" }, "T": { "mark": 0, "weight": 0 }, "C": { "mark": "80", "weight": "5" }, "A": { "mark": 0, "weight": 0 } } }, { "assignment_name": "Properties of Matter Test 2", "KTCAOF": { "K": { "mark": "70", "weight": "10" }, "T": { "mark": "89", "weight": "9" }, "C": { "mark": "78", "weight": "9" }, "A": { "mark": "73", "weight": "11" } } }, { "assignment_name": "Aggregates Lab", "KTCAOF": { "K": { "mark": 0, "weight": 0 }, "T": { "mark": 0, "weight": 0 }, "C": { "mark": "80", "weight": "5" }, "A": { "mark": "60", "weight": "10" } } }, { "assignment_name": "Reaction Rate Lab", "KTCAOF": { "K": { "mark": 0, "weight": 0 }, "T": { "mark": "68", "weight": "11" }, "C": { "mark": "83", "weight": "12" }, "A": { "mark": 0, "weight": 0 } } }, { "assignment_name": "Unit 2 Test 1 Rates", "KTCAOF": { "K": { "mark": "86", "weight": "11" }, "T": { "mark": "75", "weight": "8" }, "C": { "mark": "61", "weight": "9" }, "A": { "mark": "59", "weight": "11" } } }, { "assignment_name": "Assignment - Letter to Editor", "KTCAOF": { "K": { "mark": 0, "weight": 0 }, "T": { "mark": "80", "weight": "5" }, "C": { "mark": "100", "weight": "6" }, "A": { "mark": "96", "weight": "14" } } }, { "assignment_name": "Unit 2 Test 2 Energy", "KTCAOF": { "K": { "mark": "50", "weight": "10" }, "T": { "mark": "61", "weight": "9" }, "C": { "mark": "89", "weight": "9" }, "A": { "mark": "65", "weight": "10" } } }, { "assignment_name": "Unit 3 Test 1 - Equilibrium", "KTCAOF": { "K": { "mark": "70", "weight": "10" }, "T": { "mark": 0, "weight": "10" }, "C": { "mark": "13", "weight": "8" }, "A": { "mark": "11", "weight": "9" } } }, { "assignment_name": "Unit 3 Test - Equilibrium, Acids and Bases", "KTCAOF": { "K": { "mark": "15", "weight": "13" }, "T": { "mark": "25", "weight": "8" }, "C": { "mark": "13", "weight": "8" }, "A": { "mark": 0, "weight": "11" } } }], "weightings": { "weighting": { "K": "28.6%", "T": "28.6%", "C": "21.4%", "A": "21.4%", "O": "0%" }, "course_weighting": { "K": "20%", "T": "20%", "C": "15%", "A": "15%", "O": "0%" }, "student_achievement": { "K": "65.4%", "T": "60.8%", "C": "68.5%", "A": "54.6%", "O": "0%" } } } }, { "course_code": "ENG4U1-6", "course_name": "English", "period": "4", "room": "223 ", "semester": 2, "midterm_mark": 71, "final_mark": null, "current_mark": 72.4, "course_link": { "link": "viewReport.php?subject_id=700400&student_id=201835", "type": 1 }, "course_specifics": { "assignments": [{ "assignment_name": "Diagnostic", "KTCAOF": { "K": { "mark": 0, "weight": 0 }, "T": { "mark": 0, "weight": 0 }, "C": { "mark": 0, "weight": 0 }, "A": { "mark": "85", "weight": 0 } } }, { "assignment_name": "Persuasive Piece", "KTCAOF": { "K": { "mark": "90", "weight": "10" }, "T": { "mark": "85", "weight": "10" }, "C": { "mark": "80", "weight": "10" }, "A": { "mark": "78", "weight": "10" } } }, { "assignment_name": "Lit Crit Sight Test", "KTCAOF": { "K": { "mark": "75", "weight": "10" }, "T": { "mark": "78", "weight": "10" }, "C": { "mark": "77", "weight": "10" }, "A": { "mark": "77", "weight": "10" } } }, { "assignment_name": "Lit Crit Media Assignment", "KTCAOF": { "K": { "mark": "75", "weight": "7" }, "T": { "mark": "70", "weight": "7" }, "C": { "mark": "65", "weight": "7" }, "A": { "mark": "70", "weight": "7" } } }, { "assignment_name": "Book Club #1", "KTCAOF": { "K": { "mark": "65", "weight": 0 }, "T": { "mark": "60", "weight": 0 }, "C": { "mark": "70", "weight": 0 }, "A": { "mark": "50", "weight": 0 } } }, { "assignment_name": "Journal #1", "KTCAOF": { "K": { "mark": "75", "weight": 0 }, "T": { "mark": "60", "weight": 0 }, "C": { "mark": "70", "weight": 0 }, "A": { "mark": "53", "weight": 0 } } }, { "assignment_name": "Book Club #2", "KTCAOF": { "K": { "mark": "20", "weight": "3.5" }, "T": { "mark": "20", "weight": "3.5" }, "C": { "mark": "20", "weight": "3.5" }, "A": { "mark": "20", "weight": "3.5" } } }, { "assignment_name": "Journal #2", "KTCAOF": { "K": { "mark": "80", "weight": "3.5" }, "T": { "mark": "80", "weight": "3.5" }, "C": { "mark": "80", "weight": "3.5" }, "A": { "mark": "90", "weight": "3.5" } } }, { "assignment_name": "Book Club #3", "KTCAOF": { "K": { "mark": "80", "weight": "3.5" }, "T": { "mark": "80", "weight": "3.5" }, "C": { "mark": "70", "weight": "3.5" }, "A": { "mark": "70", "weight": "3.5" } } }, { "assignment_name": "Journal #3", "KTCAOF": { "K": { "mark": "85", "weight": "3.5" }, "T": { "mark": "73", "weight": "3.5" }, "C": { "mark": "60", "weight": "3.5" }, "A": { "mark": "70", "weight": "3.5" } } }, { "assignment_name": "Inquiry Essay", "KTCAOF": { "K": { "mark": "90", "weight": "10" }, "T": { "mark": "65", "weight": "10" }, "C": { "mark": "69", "weight": "10" }, "A": { "mark": "68", "weight": "10" } } }], "weightings": { "weighting": { "K": "25%", "T": "25%", "C": "25%", "A": "25%", "O": "0%" }, "course_weighting": { "K": "17.5%", "T": "17.5%", "C": "17.5%", "A": "17.5%", "O": "0%" }, "student_achievement": { "K": "78.5%", "T": "71.7%", "C": "69%", "A": "70.5%", "O": "0%" } } } }];
+        document.addEventListener("DOMContentLoaded", () => {
+            for (let i = 1; i < data.length; i++) {
+                const div = document.createElement('div')
+                div.classList.add('course')
+                div.classList.add('card')
+                if (data[i].course_name == "lunch") {
+                    div.classList.add('lunch')
+                    div.textContent = 'period ' + data[i].period + ' lunch in ' + data[i].room
+                } else {
+                    const div2 = document.createElement('div')
+                    div2.classList.add('general-info')
+                    drawGeneralData(div2, data[i])
+                    div.appendChild(div2)
+                    drawProgressCircle(div, data[i].current_mark, { x: 50, y: 75 })
+                }
+                document.body.appendChild(div)
+            }
+        })
+        function drawGeneralData(container, translations, data) {
+
+        }
+        function drawProgressCircle(container, percent, translations) {
+            const numTicks = 70
+            const radius = 38
+            const circle = document.createElement("div")
+            let text;
+            if (!percent) {
+                percent = 0
+                text = "N/A"
+            } else {
+                text = percent + "%"
+            }
+
+            circle.style.width = radius * 2 + 'px'
+            circle.style.height = radius * 2 + 'px'
+            circle.style.display = 'flex'
+            circle.style.justifyContent = 'center'
+            circle.style.alignItems = 'center'
+            circle.style.background = 'rgba(0,0,0,0)'
+            circle.style.position = 'absolute'
+            circle.style.left = translations.x + 'px'
+            circle.style.top = translations.y + 'px'
+            circle.style.transform = 'translate(-50%, -50%)'
+            container.append(circle)
+            for (let i = 0; i < numTicks; i++) {
+                const angle = (i / numTicks) * 2 * Math.PI
+                const x = radius * Math.cos(angle)
+                const y = radius * Math.sin(angle)
+                const tick = document.createElement("div")
+                tick.style.position = 'absolute'
+                tick.style.left = x + radius + 'px'
+                tick.style.top = y + radius + 'px'
+                tick.style.width = '17px'
+                tick.style.height = '2px'
+                tick.style.borderRadius = '15px'
+                tick.style.background = i < Math.round((percent / 100) * numTicks) ? '#47B999' : '#444'
+                tick.style.transform = 'translate(-50%, -50%) rotate(' + (i / numTicks) * 360 + 'deg)'
+                circle.appendChild(tick)
+            }
+            const perc = document.createElement("h1")
+            perc.style.fontSize = '16px'
+            perc.textContent = text
+            circle.appendChild(perc)
+
+        }
+    </script>
+</body>
+
+</html>
